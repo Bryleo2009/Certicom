@@ -3190,6 +3190,7 @@ input::-moz-focus-inner {
 .s-header.sticky.scrolling {
     opacity: 1;
     visibility: visible;
+    width: 100vw;
 }
 
 .s-header--blog .row {
@@ -3673,6 +3674,31 @@ body.search-is-visible {
     .s-header__menu-toggle {
         display: block;
     }
+    /**/
+    /**/
+    .container2{
+        display: grid !important;
+        height: 100% !important;
+    }
+    .container2 figure .capa{
+        position: static !important;
+        top: -50px !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        color: white;
+        padding: 25px !important;
+    }
+    .box2 > img{
+        height: auto !important;
+    }
+    .box2 > span{
+        height: 0 !important;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .box2{
+        margin-top: 30px !important;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -3688,6 +3714,8 @@ body.search-is-visible {
     .s-header__search-form input[type="search"] {
         font-size: 3.4rem;
     }
+    
+    
 }
 
 @media screen and (max-width: 400px) {
@@ -3704,6 +3732,7 @@ body.search-is-visible {
         max-width: 270px;
         min-height: 400px;
     }
+    
 }
 
 /* -------------------------------------------------------------------
@@ -6083,3 +6112,105 @@ body.search-is-visible {
   .box:hover .text {
     transform: rotateY(20deg) skewY(-3deg);
   }
+  /**/
+  .layout2 {
+    width: 100%;
+    height: auto;
+  
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 40% 60%;
+    gap: 10px;
+  }
+
+
+  .container2{
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    box-sizing: border-box;
+
+    
+}
+  .box2{
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    margin: 8px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.20);
+    transition: all 600ms;
+    cursor: pointer;
+}
+
+.container2 figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 88.5%;
+    background: #003c6de8;
+    transition: all 200ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: justify;
+    padding: 50px;
+}
+
+.container2 figure:hover > .capa{
+    opacity: 1;
+    color: white;
+    visibility: visible;
+    height: 100%;
+}
+
+.box2 > img{
+    width: 200%;
+    height: calc(100% - 12vh);
+    object-fit: cover;
+    transition: all 200ms;
+}
+
+figure .capa > h3 {
+    color: #A6A8AA;
+    margin-top: 1% !important;
+}
+
+.box2 > span{
+    font-size: 1em;
+    font-family: sans-serif;
+    display: block;
+    text-align: center;
+    height: 12vh;
+    line-height: 2.6;
+    font-weight: bold;
+}
+
+.box2:hover{
+    flex: 50%;
+}
+
+.box2:hover > img{
+    width: 100%;
+    height: 100%;
+}
+
+#div-cookies {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px -5px 15px gray;
+    padding: 7px;
+    text-align: center;
+    z-index: 99;
+    font-size: 80%;
+}
+
+.aceptar{
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    line-height: 20px;
+    height: 40px;
+    font-size: 70%;
+}

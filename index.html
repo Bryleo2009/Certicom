@@ -33,6 +33,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--título-->
     <title>T</title>
     <!--- basic page needs
@@ -75,11 +76,19 @@
         <div id="loader"></div>
     </div>
 
+    <div id="div-cookies" style="display: none;">
+        Necesitamos usar cookies para que funcione todo, si permanece aquí acepta su uso, más información en
+        <a hreflang="es" href="/info/aviso-legal">Aviso Legal</a>
+        y la
+        <a hreflang="es" href="/info/politica-de-privacidad">Política de Privacidad</a>.&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="button" class="btn btn-sm btn-primary aceptar" onclick="acceptCookies()">
+            Acepto el uso de cookies
+        </button>
+    </div>
 
     <!-- header
     ================================================== -->
     <header class="s-header">
-
         <div style="background-color: black;">
             <ul id="lista1">
                 <li>
@@ -112,7 +121,7 @@
                                 class="fa-solid fa-house"></i>&nbsp;&nbsp;&nbsp;Inicio</a></li>
                     <li><a class="smoothscroll" href="#nosotros"><i
                                 class="fa-solid fa-building-user"></i>&nbsp;&nbsp;&nbsp;Nosotros</a></li>
-                    <li><a class="smoothscroll" href="#portfolio"><i
+                    <li><a class="smoothscroll" href="#servicios"><i
                                 class="fa-solid fa-handshake"></i>&nbsp;&nbsp;&nbsp;Soluciones</a></li>
                     <li><a class="smoothscroll" href="#blog"><i
                                 class="fa-solid fa-people-group"></i>&nbsp;&nbsp;&nbsp;Clientes</a></li>
@@ -126,38 +135,12 @@
             </a>
 
         </div>
-        <!-- <a class="s-header__menu-toggle" href="#0" title="Menu">
-            <span class="s-header__menu-icon"></span>
-        </a>
-        <section class="layout">
-            <div class="rows" style="left: 15%;">
-                <div class="s-header__logo">
-                    <a href="index.html">
-                        <img src="images/Certicom_logo.png" alt="Homepage">
-                    </a>
-                </div>
-                
-            </div>
-            <div class="row">
-                <nav class="s-header__nav">
-                    <ul style="min-width: 500px;">
-                        <li class="current"><a class="smoothscroll" href="#home">Inicio</a></li>
-                        <li><a class="smoothscroll" href="#services">Nosotros</a></li>
-                        <li><a class="smoothscroll" href="#portfolio">Soluciones</a></li>
-                        <li><a class="smoothscroll" href="#blog">Clientes</a></li>
-                        <li><a class="smoothscroll" href="#contact">Contáctanos</a></li>
-                    </ul>
-                </nav>
-                
-            </div>
-          </section> -->
 
     </header> <!-- end s-header -->
 
 
     <!-- home
     ================================================== -->
-
     <section id="home" class="target-section">
         <div class="slider-content" style="padding: 0;max-width: 100%;margin-top: 105px;max-height: 2000px;">
             <div class="slider-wrapper">
@@ -222,7 +205,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slide" data-order="5" data-color="#f59600" data-name="blue">
+                    <!-- <div class="slide" data-order="5" data-color="#f59600" data-name="blue">
                         <div class="slide-content ">
                             <div class="clip-svg">
                                 <img class="" src="images/b5.png" alt="" />
@@ -233,7 +216,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="slide" data-order="6" data-color="#f59600" data-name="blue">
                         <div class="slide-content ">
                             <div class="clip-svg">
@@ -291,7 +274,9 @@
             <div class="s-home__line" style="top: 880px;"></div>
         </div>
     </section>
-    <!-- services
+
+
+    <!-- nosotros
     ================================================== -->
     <section id="nosotros" class="s-services target-section s-dark">
 
@@ -300,7 +285,8 @@
                 <img src="images/c5.svg" alt="" srcset="" style="position: relative; width: 100%;">
             </div>
             <div class="column large-8 medium-12" data-aos="fade-up">
-                <h2 style="color: #A6A8AA;"><i class="fa-solid fa-building-user"></i>&nbsp;&nbsp;&nbsp;Nosotros</h2>
+                <h2 style="color: #A6A8AA; font-family: 'Arvo', serif;"><i
+                        class="fa-solid fa-building-user"></i>&nbsp;&nbsp;&nbsp;Nosotros</h2>
                 <p class="desc">Somos una empresa fundada en 1995 que opera en todas las ciudades del Perú. Brindamos a
                     nuestros clientes soluciones de gestión de oficinas, digitalización, verificaciones, soluciones con
                     tecnología, consultoría y tercerización de procesos (BPO). Nuestro valor se sustenta en la vasta
@@ -311,7 +297,7 @@
 
         </div> <!-- end section-head -->
 
-        <div class="row block-large-1-2 block-medium-1-2 block-tab-full services-list" >
+        <div class="row block-large-1-2 block-medium-1-2 block-tab-full services-list">
 
             <div class="column services-item" data-aos="fade-up">
                 <div class="box"><i class="fas fa-quote-left fa2"></i>
@@ -347,197 +333,145 @@
     </section> <!-- end s-services -->
 
 
-    <!-- portfolio
+    <!-- servicios
     ================================================== -->
-    <section id="portfolio" class="s-portfolio target-section">
-
-        <div class="row section-head">
-            <div class="column large-3 medium-12" data-aos="fade-up">
-                <h2>Portfolio</h2>
-                <p class="desc">Check out our latest projects.</p>
+    <section id="servicios" class="s-portfolio target-section">
+        <h2 style="font-family: 'Arvo', serif; text-align: center; margin: 0;"><i class="fa-solid fa-handshake"></i>
+        </h2>
+        <h2 style="font-family: 'Arvo', serif; text-align: center; margin-top: 0;">Soluciones</h2>
+        <div class="row">
+            <div class="container2">
+                <figure class="box2">
+                    <img src="images/e8.png">
+                    <span>Verificación de expedientes</span>
+                    <div class="capa">
+                        <h3>Verificación de expedientes</h3>
+                        <p>Verificamos el expediente presentado por el solicitante (acceso a servicios de telefonía,
+                            otorgamiento de líneas de crédito, categorización en institutos o universidades, entre
+                            otros), de acuerdo a los parámetros establecidos por el cliente y al uso de base de datos.
+                        </p>
+                    </div>
+                </figure>
+                <figure class="box2">
+                    <img src="images/e4.png">
+                    <span>Digitalización</span>
+                    <div class="capa">
+                        <h3>Digitalización y Digitación</h3>
+                        <p>Desarrollamos actividades de digitación y digitalización masiva de documentos con valor
+                            legal. La solución implica el outsourcing integral del proceso, provisión del hardware y
+                            software, y entrega al cliente de los archivos digitales para sus procesos de negocio.
+                            También proveemos aplicaciones específicas para este fin.
+                        </p>
+                    </div>
+                </figure>
+                <figure class="box2">
+                    <img src="images/e6.png">
+                    <span>Kioskos</span>
+                    <div class="capa">
+                        <h3>Kioskos Multimedia y Segmentadores</h3>
+                        <p>Nuestros sistemas y módulos ofrecen ventajas como el ahorro de costos, el horario corrido de
+                            servicio y un alto impacto tecnológico en el usuario. Desarrollamos terminales de pagos de
+                            servicios, auto consulta e información y dispensadores de tickets (Sistemas de Colas).
+                        </p>
+                    </div>
+                </figure>
+                <figure class="box2">
+                    <img src="images/e9.png">
+                    <span>Soluciones Biométricas</span>
+                    <div class="capa">
+                        <h3>Soluciones Biométricas</h3>
+                        <p>Desarrollamos soluciones basadas en Tecnología de Identificación Biométrica orientadas a la
+                            prevención de fraudes, validación de identidad, control de acceso, control de asistencia y
+                            operaciones transaccionales de carácter comercial. Estas pueden ser biometría dactilar
+                            (huella), facial, impresión palmar, vascular o escaneo biométrico de iris.
+                        </p>
+                    </div>
+                </figure>
             </div>
-
-            <div class="column large-8 medium-12 align-x-right" data-aos="fade-up">
-                <p class="lead">
-                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                    praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
-                    excepturi sint occaecati cupiditate. At vero eos et accusamus et iusto odio
-                    dignissimos ducimus qui blanditiis praesentium.
-                </p>
+            <div class="container2">
+                <figure class="box2">
+                    <img src="images/e7.png">
+                    <span>Sistemas de Comercialización y Control</span>
+                    <div class="capa">
+                        <h3>SCTP-Sistemas de Control de Tercerización de Productos</h3>
+                        <p>Es una solución de software basada en un Workflow que se enfoca en la generación de valor de
+                            los procesos de comercialización de productos, mediante el uso de herramientas tecnológicas
+                            que soportan e integran servicios diferentes pero complementarios. <br> Incluye registro de
+                            información, segmentación de mercado, control de calidad, facturación de interface con
+                            sistemas de Recursos Humanos, cálculo de planilla, comisiones para la fuerza de venta y un
+                            Workflow (SCPF) que apoya al SCTP.
+                        </p>
+                    </div>
+                </figure>
+                <figure class="box2">
+                    <img src="images/e10.png">
+                    <span>Comercialización de Productos Financieros</span>
+                    <div class="capa">
+                        <h3>Comercialización de Productos Financieros (CPF)</h3>
+                        <p>Son servicios comerciales de productos financieros destinados a personas naturales o empresas
+                            a nivel nacional (Banca personal, PYMES, entre otros), que permiten identificar y vincular a
+                            los no clientes de la institución o profundizar y rentabilizar las relaciones con clientes
+                            existentes mediante estrategias de venta cruzada. <br> El servicio incluye la identificación
+                            de
+                            clientes del perfil seleccionado por la entidad, clientes y procesos de aseguramiento de la
+                            calidad crediticia de los solicitantes de acuerdo a reglas y políticas preestablecidas por
+                            el negocio.</p>
+                    </div>
+                </figure>
             </div>
-        </div> <!-- end section-head -->
-
-        <div class="row block-large-1-3 block-medium-1-2 block-mob-full folio-list">
-
-            <div class="column folio-item" data-aos="fade-up">
-                <a href="#modal-01" class="folio-item__thumb" data-lity>
-                    <img src="images/portfolio/droplet.jpg" srcset="images/portfolio/droplet.jpg 1x, 
-                                 images/portfolio/droplet@2x.jpg 2x" alt="">
-                    <span class="folio-item__text">
-                        Droplet
-                    </span>
-                </a>
-            </div> <!-- end folio-item -->
-
-            <div class="column folio-item" data-aos="fade-up">
-                <a href="#modal-02" class="folio-item__thumb" data-lity>
-                    <img src="images/portfolio/lamp.jpg" srcset="images/portfolio/lamp.jpg 1x, 
-                                 images/portfolio/lamp@2x.jpg 2x" alt="">
-                    <span class="folio-item__text">
-                        The Lamp
-                    </span>
-                </a>
-            </div> <!-- end folio-item -->
-
-            <div class="column folio-item" data-aos="fade-up">
-                <a href="#modal-03" class="folio-item__thumb" data-lity>
-                    <img src="images/portfolio/minimalismo.jpg" srcset="images/portfolio/minimalismo.jpg 1x, 
-                                 images/portfolio/minimalismo@2x.jpg 2x" alt="">
-                    <span class="folio-item__text">
-                        Minimalismo
-                    </span>
-                </a>
-            </div> <!-- end folio-item -->
-
-            <div class="column folio-item" data-aos="fade-up">
-                <a href="#modal-04" class="folio-item__thumb" data-lity>
-                    <img src="images/portfolio/shutterbug.jpg" srcset="images/portfolio/shutterbug.jpg 1x, 
-                                 images/portfolio/shutterbug@2x.jpg 2x" alt="">
-                    <span class="folio-item__text">
-                        Shutterbug
-                    </span>
-                </a>
-            </div> <!-- end folio-item -->
-
-            <div class="column folio-item" data-aos="fade-up">
-                <a href="#modal-05" class="folio-item__thumb" data-lity>
-                    <img src="images/portfolio/fuji.jpg" srcset="images/portfolio/fuji.jpg 1x, 
-                                 images/portfolio/fuji@2x.jpg 2x" alt="">
-                    <span class="folio-item__text">
-                        Fuji
-                    </span>
-                </a>
-            </div> <!-- end folio-item -->
-
-            <div class="column folio-item" data-aos="fade-up">
-                <a href="#modal-06" class="folio-item__thumb" data-lity>
-                    <img src="images/portfolio/skaterboy.jpg" srcset="images/portfolio/skaterboy.jpg 1x, 
-                                 images/portfolio/skaterboy@2x.jpg 2x" alt="">
-                    <span class="folio-item__text">
-                        Skaterboy
-                    </span>
-                </a>
-            </div> <!-- end folio-item -->
-
-        </div> <!-- end folio-list -->
-
-
-        <!-- Modal Popup
-        =========================================================== -->
-        <div id="modal-01" class="modal-popup lity-hide">
-
-            <img src="images/portfolio/gallery/g-droplet.jpg" alt="" />
-
-            <div class="modal-popup__desc">
-                <h5>Droplet</h5>
-                <p>Odio soluta enim quos sit asperiores rerum rerum repudiandae cum. Vel voluptatem alias qui assumenda
-                    iure et expedita voluptatem. Ratione officiis quae.</p>
-                <ul class="modal-popup__cat">
-                    <li>Branding</li>
-                    <li>Product Design</li>
-                </ul>
+            <div class="container2">
+                <figure class="box2">
+                    <img src="images/e11.png">
+                    <span>Gestión de Oficinas</span>
+                    <div class="capa">
+                        <h3>Gestión de Oficinas - Atención al Público</h3>
+                        <p>Proveemos el outsourcing integral de la implementación, procesos y operación de oficinas de
+                            actividades de gestión comercial: atención de solicitudes, reclamos, recaudación, recepción
+                            de solicitudes de trámite y de la atención al público.</p>
+                    </div>
+                </figure>
+                <figure class="box2">
+                    <img src="images/e3.png">
+                    <span>Monitoreo Vehicular</span>
+                    <div class="capa">
+                        <h3>CERTISAT - Monitoreo Vehicular</h3>
+                        <p>Consiste en el servicio de rastreo y ubicación de personas o vehículos en tiempo real, basado
+                            en tecnología GPS/GSM/GPRS. Esto incluye el monitoreo especializado 24/7. Este se
+                            complementa con el más eficiente sistema de gestión de flota de uso corporativo.</p>
+                    </div>
+                </figure>
+                <figure class="box2">
+                    <img src="images/e1.png">
+                    <span>OpenERP</span>
+                    <div class="capa">
+                        <h3>OpenERP - Odoo</h3>
+                        <p>Brindamos servicios de consultoría y soporte para la implantación y mantenimiento de la
+                            solución ERP de Odoo. Una solución de código abierto sin costo por licenciamiento ni por
+                            número de usuarios. <br>
+                            Nuestros servicios integran los diferentes módulos de esta solución abierta con las buenas
+                            prácticas de la industria, incluyendo el diagnóstico de los procesos de negocio de cada
+                            cliente, la implantación de la solución y su soporte post-venta.
+                        </p>
+                    </div>
+                </figure>
+                <figure class="box2">
+                    <img src="images/e2.png">
+                    <span>Facturación Electrónica</span>
+                    <div class="capa">
+                        <h3>CERTIFAKT - Facturación Electrónica</h3>
+                        <p>Dirigido a cualquier empresa que no cuente con un software de ventas propio o un ERP. No
+                            requiere implementación. Se le facilitará al cliente un usuario y contraseña para el acceso
+                            a la plataforma online a través de la cual se podrán registrar facturas y boletas
+                            electrónicas, notas de débito y crédito electrónicas, registro masivo de boletas y
+                            comunicaciones de baja. <br> Con nuestra opción de multi-empresa, puedes acceder desde
+                            cualquier
+                            punto de venta de tu empresa. Además, tienes la opción de personalizar los datos a emitir en
+                            tu comprobante electrónico.
+                        </p>
+                    </div>
+                </figure>
             </div>
-
-            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
-
-        </div> <!-- end modal-01 -->
-
-        <div id="modal-02" class="modal-popup lity-hide">
-
-            <img src="images/portfolio/gallery/g-lamp.jpg" alt="" />
-
-            <div class="modal-popup__desc">
-                <h5>The Lamp</h5>
-                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
-                    elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                <ul class="modal-popup__cat">
-                    <li>Branding</li>
-                </ul>
-            </div>
-
-            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
-
-        </div><!-- end modal-02 -->
-
-        <div id="modal-03" class="modal-popup lity-hide">
-
-            <img src="images/portfolio/gallery/g-minimalismo.jpg" alt="" />
-
-            <div class="modal-popup__desc">
-                <h5>Minimalismo</h5>
-                <p>Exercitationem reprehenderit quod explicabo consequatur aliquid ut magni ut. Deleniti quo corrupti
-                    illum velit eveniet ratione necessitatibus ipsam mollitia.</p>
-                <ul class="modal-popup__cat">
-                    <li>Product Design</li>
-                </ul>
-            </div>
-
-            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
-
-        </div><!-- end modal-03 -->
-
-        <div id="modal-04" class="modal-popup lity-hide">
-
-            <img src="images/portfolio/gallery/g-shutterbug.jpg" alt="" />
-
-            <div class="modal-popup__desc">
-                <h5>Shutterbug</h5>
-                <p>Dolores velit qui quos nobis. Aliquam delectus voluptas quos possimus non voluptatem voluptas
-                    voluptas. Est doloribus eligendi porro doloribus voluptatum.</p>
-                <ul class="modal-popup__cat">
-                    <li>E-Commerce</li>
-                </ul>
-            </div>
-
-            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
-
-        </div><!-- end modal-04 -->
-
-        <div id="modal-05" class="modal-popup lity-hide">
-
-            <img src="images/portfolio/gallery/g-fuji.jpg" alt="" />
-
-            <div class="modal-popup__desc">
-                <h5>Fuji</h5>
-                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
-                    elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                <ul class="modal-popup__cat">
-                    <li>Product Design</li>
-                </ul>
-            </div>
-
-            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
-
-        </div><!-- end modal-05 -->
-
-        <div id="modal-06" class="modal-popup lity-hide">
-
-            <img src="images/portfolio/gallery/g-skaterboy.jpg" alt="" />
-
-            <div class="modal-popup__desc">
-                <h5>Skaterboy</h5>
-                <p>Quisquam vel libero consequuntur autem voluptas. Qui aut vero. Omnis fugit mollitia cupiditate
-                    voluptas. Aenean sollicitudin, lorem quis bibendum auctor.</p>
-                <ul class="modal-popup__cat">
-                    <li>Branding</li>
-                    <li>Product Design</li>
-                </ul>
-            </div>
-
-            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
-
-        </div><!-- end modal-06 -->
-
+        </div>
     </section> <!-- end s-portfolio -->
 
 
