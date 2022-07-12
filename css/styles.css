@@ -5944,7 +5944,6 @@ section.awSlider > img {
 .slider-content {
   position: relative;
   max-width: 112rem;
-  min-width: 480px;
   background: #fff;
   margin: 0 auto;
   overflow: hidden;
