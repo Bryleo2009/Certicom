@@ -3727,7 +3727,7 @@ body.search-is-visible {
   }
 
   .degra {
-    top: -178px !important;
+    top: -181px !important;
   }
   .form {
     width: 100% !important;
@@ -3774,7 +3774,19 @@ body.search-is-visible {
   }
 
   .social{
-    margin-top: 15% !important;
+    margin-top: 5% !important;
+  }
+
+  .adi{
+    opacity: 0.3 !important;
+    visibility: visible !important;
+    position: relative;
+    width: 105% !important;
+    margin: 0;
+    padding: 0;
+  }
+  .texto {
+    font-size: 150% !important;
   }
 }
 
@@ -3790,6 +3802,12 @@ body.search-is-visible {
   }
   .s-header__search-form input[type="search"] {
     font-size: 3.4rem;
+  }
+  .social{
+    margin-top: 15% !important;
+  }
+  .degra {
+    top: -178px !important;
   }
 }
 
@@ -6476,6 +6494,7 @@ figure .capa .btn-contact > a {
   top: -350px;
   color: white;
   font-family: "Arvo", serif;
+  font-size: 200%;
 }
 
 .form {
@@ -6697,4 +6716,12 @@ textarea {
 .social {
   color: #fff; text-align: right; font-size: 200%;
   padding-top: 5%;
+}
+
+.adi{
+  opacity: 0;
+  visibility: hidden;
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
