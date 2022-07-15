@@ -3791,8 +3791,19 @@ body.search-is-visible {
 
   /**/
 
- 
-  
+  .logo-poli {
+    visibility: hidden;
+  }
+  .curva {
+    top: 215px !important;
+  }
+  .contenido-poli {
+    padding: 20px !important;
+    padding-top: 60px !important;
+    font-size: 90% !important;
+    width: 92vw !important;
+    max-width: var(--width-grid-max) !important;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -6733,8 +6744,8 @@ textarea {
 }
 
 /**/
-.poli {
-  background-image: url(/images/motivo-cookie.png);
+.poli-cookie {
+  background-image: url(../images/motivo-cookie.png);
   background-size: 195%;
   background-color: #000;
 }
@@ -6743,6 +6754,15 @@ textarea {
   margin-bottom: 0;
   top: -40px;
   position: relative;
+}
+
+.curva {
+  position: absolute;
+  z-index: 2;
+  margin: auto;
+  width: 92%;
+  top: 170px;
+  max-width: var(--width-grid-max);
 }
 
 .title-poli {
@@ -6764,7 +6784,7 @@ textarea {
 
 .atras {
   position: relative;
-  z-index:4;
+  z-index: 4;
 }
 
 .btn-atras:hover {
@@ -6776,7 +6796,6 @@ textarea {
   color: #fff;
   --btn-height: 30px;
 }
-
 
 .f-poli {
   position: static;
@@ -6807,6 +6826,6 @@ textarea {
   width: 100%;
 }
 
-.cabecera-poli{
+.cabecera-poli {
   width: 100%;
 }
