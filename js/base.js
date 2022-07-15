@@ -160,6 +160,7 @@ $(document).ready(function () { mySlider.init(); });
 
 function checkAcceptCookies() {
   if (localStorage.acceptCookies == 'true') {
+    response.setHeader("Set-Cookie", "HttpOnly;Secure;SameSite=Strict");
   } else {
     $('#div-cookies').show();
   }
