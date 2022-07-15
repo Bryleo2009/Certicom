@@ -3575,6 +3575,10 @@ body.search-is-visible {
     position: relative;
     font-size: 25px !important;
   }
+  .curva {
+    width: 92%;
+    top: 165px !important;
+  }
 }
 
 @media screen and (min-width: 970px) and (max-width: 1061px) {
@@ -3586,6 +3590,10 @@ body.search-is-visible {
     position: relative;
     font-size: 25px !important;
   }
+  .curva {
+    width: 92%;
+    top: 165px !important;
+  }
 }
 @media screen and (min-width: 901px) and (max-width: 970px) {
   .rows {
@@ -3595,6 +3603,10 @@ body.search-is-visible {
     top: -90px;
     position: relative;
     font-size: 22px !important;
+  }
+  .curva {
+    width: 92%;
+    top: 160px !important;
   }
 }
 
@@ -3795,7 +3807,7 @@ body.search-is-visible {
     visibility: hidden;
   }
   .curva {
-    top: 215px !important;
+    visibility: hidden;
   }
   .contenido-poli {
     padding: 20px !important;
@@ -3825,6 +3837,17 @@ body.search-is-visible {
   .degra {
     top: -178px !important;
   }
+  .curva {
+    width: 92%;
+    top: 165px !important;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 416px) {
+  .curva {
+    width: 92%;
+    top: 219px !important;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -3840,6 +3863,10 @@ body.search-is-visible {
   .box {
     max-width: 270px;
     min-height: 400px;
+  }
+  .curva {
+    width: 92%;
+    top: 210px !important;
   }
 }
 
@@ -6746,6 +6773,21 @@ textarea {
 /**/
 .poli-cookie {
   background-image: url(../images/motivo-cookie.png);
+  background-size: 195%;
+  background-color: #000;
+}
+.poli-legal {
+  background-image: url(../images/motivo-legal.png);
+  background-size: 195%;
+  background-color: #000;
+}
+.poli-privacidad {
+  background-image: url(../images/motivo-privacidad.png);
+  background-size: 195%;
+  background-color: #000;
+}
+.poli-seguridad {
+  background-image: url(../images/motivo-seguridad.png);
   background-size: 195%;
   background-color: #000;
 }
